@@ -1,0 +1,39 @@
+.btn {
+		/* button style */
+		border: none;
+		background: $brand-blue;
+		border-radius: .25em;
+		padding: $base-spacing*0.65 $base-spacing;
+		color: white;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: $base-font-size*0.65;
+		display: inline-block;
+		cursor: pointer;
+
+		@include font-smoothing;
+		@include appearance(none);
+		
+
+		.no-touch &:hover {
+			background: lighten($brand-blue, 5%);
+			color: white;
+		}
+
+		&:focus {
+			outline: none;
+			background: $brand-blue;
+			color: white;
+		}
+
+		&:active {
+			@include transform(scale(.9));
+			color: white;
+		}
+}
+
+.call-to-action {
+	text-align: center;
+	margin-top: $base-spacing;
+}

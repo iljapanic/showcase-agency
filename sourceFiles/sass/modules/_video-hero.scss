@@ -1,0 +1,79 @@
+// Video Hero
+//
+//
+
+.video-hero {
+	background-image: url('../img/video-fallback.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 30% center;
+	text-align: center;
+	color: white;
+	position: relative;
+
+
+	@include MQ(L) {
+		background-image: none;
+	}
+	
+	&:after {
+		@include overlay;
+		background-color: rgba($brand-gray, 0.25);
+	}
+	
+	&.touch {
+		&:after {
+			@include overlay;
+			background-color: rgba($brand-gray, 0.5);
+		}
+	}
+	
+}
+
+.video-hero--logo {
+
+	@include MQ(M) {
+		margin-top: $base-spacing*3;
+	}
+}
+
+.video-hero--title {
+	font-weight: normal;
+	@include text-bold;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	text-shadow: 0px 1px 1px $brand-gray;
+	width: 100%;
+	z-index: $layer-2;
+	line-height: 1.5;
+	
+	@include MQ(M) {
+		font-size: $h4-font-size;
+		margin-top: $base-spacing*1.5;
+	}
+	
+	@include MQ(L) {
+		font-size: $h4-font-size;
+	}
+}
+
+
+.cover-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	iframe {
+		max-width: 100%;
+	}
+}
+
+
+
+
+
+

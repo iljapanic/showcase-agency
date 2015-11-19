@@ -1,0 +1,55 @@
+//
+// Text
+//
+
+
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+@mixin font-smoothing {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+@mixin heading-1 {
+    font-size: $h1-font-size;
+}
+
+@mixin heading-2 {
+    font-size: $h2-font-size;
+}
+
+@mixin heading-3 {
+    font-size: $h3-font-size;
+}
+
+@mixin heading-4 {
+    font-size: $h4-font-size;
+}
+
+@mixin heading-5 {
+    font-size: $h5-font-size;
+}
+
+@mixin heading-6 {
+    font-size: $h6-font-size;
+}
+
+@mixin text-color-light {
+	color: tint($brand-gray-light, 95%);
+}
+
+@mixin text-bold {
+    font-weight: $font-bold;
+}
+
+@mixin text-super-bold {
+    font-weight: $font-super-bold;
+}

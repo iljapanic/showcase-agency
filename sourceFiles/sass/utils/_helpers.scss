@@ -1,0 +1,47 @@
+/* ==========================================================================
+	HELPER CLASSES   
+========================================================================== */
+
+.center-text {
+    text-align: center;
+}
+
+.body-text {
+    // max-width: $max-width-paragraph;
+    margin: 0 auto;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.float-left {
+    float: left;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-gray {
+    background-color: $brand-gray-light;
+}
+
+/* Misc.
+-------------------------------------------------------------- */
+
+// hide element completely
+.is-hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+// vissualy hide element, but keep it available for screen readers
+.is-visually-hidden,
+.sr-only {
+    @include sr-only;
+}

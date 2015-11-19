@@ -1,0 +1,36 @@
+// Post
+//
+//
+
+
+
+.post__title {
+	margin-bottom: $base-spacing/4;
+	text-transform: uppercase;
+	@include text-super-bold;
+	letter-spacing: 1px;
+}
+
+.post__subtitle {
+	margin-bottom: $base-spacing/4;
+	
+	@include heading-5;
+
+	@include MQ(M) {
+		@include heading-3;
+	}
+}
+
+.post__body {
+	@include outer-container($max-width-paragraph);
+	
+	ul {
+		padding-left: $base-spacing*1.5;
+		list-style-type: disc;
+		text-align: left;
+	}
+	
+	li {
+		margin-top: $base-spacing/4;
+	}
+}

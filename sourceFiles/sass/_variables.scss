@@ -1,0 +1,152 @@
+/* ==========================================================================
+	TYPOGRAHPY
+========================================================================== */
+
+// Font foundries
+$helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$georgia: Georgia, Times, 'Times New Roman', serif;
+
+$montserrat: 'Montserrat';
+$open-sans: 'Open Sans';
+
+$lato: 'Lato';
+
+$base-font-family: $lato, $helvetica;
+$header-font-family: $lato, $georgia;
+
+// Font Sizes
+$base-font-size: 1.1em;
+$h1-font-size: $base-font-size * 1.8;
+$h2-font-size: $base-font-size * 1.8;
+$h3-font-size: $base-font-size * 1.75;
+$h4-font-size: $base-font-size * 1.5;
+$h5-font-size: $base-font-size * 1.25;
+$h6-font-size: $base-font-size;
+
+// Font weights
+$font-light: 300;
+$font-normal: 400;
+$font-bold: 700;
+$font-super-bold: 900;
+
+// Line height
+$base-line-height: 1.5;
+$header-line-height: 1.25;
+
+
+/* ==========================================================================
+	GRID SETTINGS + BREAKING POINTS + SIZING
+========================================================================== */
+
+// breakpoints
+$S: '(min-width:320px)';   
+$M: '(min-width:768px)';     
+$L: '(min-width:1024px)';  
+
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$base-z-index: 0;
+
+
+// Z-index scale
+$layer-1: 1;
+$layer-2: 10;
+$layer-3: 100;
+$layer-4: 1000;
+$layer-5: 10000;
+
+$sub-layer-1: -1;
+$sub-layer-2: -10;
+$sub-layer-3: -100;
+$sub-layer-4: -1000;
+$sub-layer-5: -10000;
+
+
+/* ==========================================================================
+	COLORS
+========================================================================== */
+
+// BW
+$black: #000;
+$white: #fff;
+
+// Grays
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #DDD;
+
+// basic colors
+$blue: #477DCA;
+$light-red: #FBE3E4;
+$light-yellow: #FFF6BF;
+$light-green: #E6EFC2;
+
+$success-green: #2cc36b;
+$error-red: #c0392b;
+
+// Social colors
+$social-facebook: #2f4b93;
+$social-twitter: #00bdef;
+$social-instagram: #517fa4;
+$social-linkedin: #0072b5;
+$social-googleplus: #2d2d2d;
+
+// Brand colors
+$brand-blue: #0088F2;
+$brand-blue-light: shade($brand-blue, 75%);
+$brand-purple: #8992c8;
+		
+
+$brand-gray: #363F48;
+$brand-gray-light: #D6D8DA;
+$brand-gray-dark: #1B1F24;
+
+
+/* ==========================================================================
+	DEFAULT STYLES
+========================================================================== */
+
+// Background Color
+$base-background-color: white;
+
+// Font Colors
+$base-font-color: $dark-gray;
+$base-accent-color: $blue;
+
+// Link Colors
+$base-link-color: $base-accent-color;
+$hover-link-color: darken($base-accent-color, 15);
+$base-button-color: $base-link-color;
+$hover-button-color: $hover-link-color;
+
+// Flash Colors
+$alert-color: $light-yellow;
+$error-color: $light-red;
+$notice-color: lighten($base-accent-color, 40);
+$success-color: $light-green;
+
+// Border color
+$base-border-color: $light-gray;
+$light-border-color: lighten($base-border-color, 45);
+
+$base-border: 1px solid $base-border-color;
+$medium-border: 2px solid $base-border-color;
+$strong-border: 3px solid $base-border-color;
+$fat-border: 5px solid $base-border-color;
+
+
+
+/* ==========================================================================
+	FORMS
+========================================================================== */
+
+$form-border-color: $base-border-color;
+$form-border-color-hover: darken($base-border-color, 10);
+$form-border-color-focus: $base-accent-color;
+$form-border-radius: $base-border-radius;
+$form-box-shadow: inset 0 1px 3px rgba(black,0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
+$form-font-size: $base-font-size;
+$form-font-family: $base-font-family;

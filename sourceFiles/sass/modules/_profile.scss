@@ -1,0 +1,52 @@
+.profile__name {
+	@include heading-6();
+}
+
+.profile__title {
+	font-size: 95%;
+	font-style: italic;
+}
+
+.profile__image img {
+	border-radius: 50%;
+	border: 2px solid $brand-blue;
+}
+
+.profile__social {
+	margin-top: $base-spacing/8;
+}
+
+.profile__social li {
+	display: inline-block;
+}
+
+.icon-email {
+	@include sprite(box-email);
+	
+	transition: opacity 0.5s;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.icon-linkedin {
+	@include sprite(box-linkedin);
+	
+	transition: opacity 0.5s;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.icon-twitter {
+	@include sprite(box-twitter);
+	
+	transition: opacity 0.5s;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+

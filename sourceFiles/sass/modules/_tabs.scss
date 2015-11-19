@@ -1,0 +1,330 @@
+// Tabs
+//
+//
+
+$tab-icon-wrap-size: 5.5rem;
+$tab-icon-wrap-size-M: 8.5rem;
+
+
+
+@mixin active-icon {
+	background-color: $brand-blue;
+	color: white;
+	transition: background-color 0.5s;
+	@include svg-select {
+		stroke: white;
+		transition: stroke 0.5s;
+	}
+	svg {
+		transform: scale(1);
+		transition: transform 0.5s;
+	}
+}
+
+
+@mixin active-arrow {
+
+	@include svg-select {
+		fill: white;
+		stroke: white !important;
+		transition: stroke 0.5s;
+	}
+}
+
+.l-tabs {
+	
+	.tabs li {
+		width: 50%;
+		float: left;
+		margin: 0;
+	
+		@include MQ(M) {
+			width: auto;
+			float: none;
+			margin-right: $base-spacing*1.75;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
+
+}
+
+
+ul.tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-align: center;
+	max-width: 100%;
+}
+
+ul.tabs li{
+	background: none;
+	text-transform: uppercase;
+	text-align: center;
+	display: inline-block;
+	padding: $base-spacing/2;
+	cursor: pointer;
+
+	&:hover {
+
+		.tab__icon {
+			background-color: tint($brand-gray-light, 15%);
+		}
+
+	}
+}
+
+.tab__icon {
+	background-color: shade($brand-gray-light, 15%);
+	height: $tab-icon-wrap-size;
+	width: $tab-icon-wrap-size;
+	border-radius: 50%;
+	vertical-align: middle;
+	display: table;
+	cursor: pointer;
+	position: relative;
+	transition: background-color 0.5s;
+	@include margin-center;
+
+
+	svg {
+		transform: scale(0.85);
+		transition: transform 0.5s;
+
+		max-width: 35px;
+
+		@include MQ(M) {
+			max-width: none;
+		}
+	}
+
+	@include MQ(M) {
+		height: $tab-icon-wrap-size-M;
+		width: $tab-icon-wrap-size-M;
+	}
+
+}
+
+.tab__icon--inner {
+	display: table-cell;
+	vertical-align: middle;
+	
+	&.shift-top {
+		padding-top: 10px;
+	}
+}
+
+.tab__arrow { // 42 width
+	display: none; // hide on mobile
+	vertical-align: middle;
+	position: absolute;
+	right: -45%;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	cursor: default;
+
+	@include svg-select {
+		fill: shade($brand-gray-light, 15%);
+		stroke: shade($brand-gray-light, 15%) !important;
+	}
+
+	@include MQ(M) {
+		display: table;
+	}
+
+}
+
+.tab__arrow--inner {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.tab__label {
+	display: block;
+	font-size: $base-font-size*0.65;
+	margin-top: $base-spacing/2;
+	@include text-bold;
+	
+	@include MQ(M) {
+		display: block;
+		font-size: $base-font-size*0.85;
+	}
+}
+
+.tab__content {
+	display: none;
+	margin-bottom: $base-spacing;
+	text-align: center;
+	padding: $base-spacing;
+	@include heading-6;
+	
+	&.current {
+		display: inherit;
+	}
+}
+
+.tab__content p {
+	max-width: 540px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tab__content--inner {
+	
+	position: relative;
+	
+	padding: $base-spacing 0;
+	
+	&:before {
+		content: '';
+		display: block;
+		height: 1px;
+		width: 85%;
+		@include margin-center;
+		margin-bottom: $base-spacing*1.5;
+		border-top: 2px solid $brand-gray-light;
+
+		@include MQ(M) {
+			width: 65%;
+		}
+
+		@include MQ(L) {
+			width: 35%;
+		}
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		height: 1px;
+		width: 85%;
+		@include margin-center;
+		margin-top: $base-spacing*1.5;
+		border-bottom: 2px solid $brand-gray-light;
+		@include MQ(M) {
+			width: 65%;
+		}
+
+		@include MQ(L) {
+			width: 35%;
+		}
+	}
+}
+
+.tab__title {
+	text-transform: uppercase;
+	font-size: $base-font-size*0.85;
+	letter-spacing: 1px;
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: 0;
+	right: 0;
+
+	span {
+		padding: $base-spacing/4 $base-spacing/2;
+		border-radius: $base-border-radius*6;
+		background-color: white;
+		color: $base-font-color;
+	}
+}
+
+
+ul.tabs li.current {
+	
+	.tab__icon {
+		@include active-icon;
+	}
+	
+	.tab__label {
+		transition: transform 0.15s;
+		transform: scale(1.1);
+		@include text-super-bold;
+	}
+	
+}
+
+
+ul.tabs {
+
+	
+	&.step1 {
+		
+		li:nth-child(1) .tab__icon {
+			@include active-icon;
+		}
+
+	}
+
+	&.step2 {
+
+		li:nth-child(1) .tab__icon {
+			@include active-icon;
+			.tab__arrow {
+				@include active-arrow;
+			}
+		}
+
+		li:nth-child(2) .tab__icon {
+			@include active-icon;
+		}
+		
+	}
+
+	&.step3 {
+
+		li:nth-child(1) .tab__icon {
+			@include active-icon;
+			.tab__arrow {
+				@include active-arrow;
+			}
+		}
+			
+		li:nth-child(2) .tab__icon {
+			@include active-icon;
+			.tab__arrow {
+				@include active-arrow;
+			}
+		}
+		
+		li:nth-child(3) .tab__icon {
+			@include active-icon;
+		}
+
+	}
+
+	&.step4 {
+
+		li:nth-child(1) .tab__icon {
+			@include active-icon;
+			.tab__arrow {
+				@include active-arrow;
+			}
+		}
+		
+		li:nth-child(2) .tab__icon {
+			@include active-icon;
+			.tab__arrow {
+				@include active-arrow;
+			}
+		}
+		
+		li:nth-child(3) .tab__icon {
+			@include active-icon;
+			.tab__arrow {
+				@include active-arrow;
+			}
+		}
+		
+		li:nth-child(4) .tab__icon {
+			@include active-icon;
+		}
+
+	}
+
+
+}

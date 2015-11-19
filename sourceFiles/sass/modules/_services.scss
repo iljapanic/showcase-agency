@@ -1,0 +1,82 @@
+//
+// Services
+//
+
+.l-grid {
+
+
+
+	.service-box {
+		
+
+		@include MQ(M) {
+
+			@include span(2/6, $cycle:3);
+
+			&:nth-child(4) {
+				@include span(2/6, $uncycle:3);
+				@include shift(1/6, span);
+			}
+
+			&:nth-child(5) {
+				@include span(2/6, $uncycle:3);
+				@include shift(1/6, span);
+			}
+
+
+
+		}
+
+	}
+
+
+}
+
+
+.service-box {
+	text-align: center;
+	margin-top: $base-spacing*2;
+
+
+	@include MQ(M) {
+
+		&:nth-child(4),
+		&:nth-child(5) {
+			margin-top: $base-spacing*3;	
+		}
+	}
+}
+
+.service-box__title {
+	@include heading-6;
+	font-size: $base-font-size*0.95;
+	margin-bottom: $base-spacing/6;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.service-box__body {
+	font-size: $base-font-size*0.78;
+	max-width: 95%;
+	@include margin-center;
+}
+
+.service-box__icon {
+	
+	margin-bottom: $base-spacing/2;
+
+	svg {
+		transform: scale(1.15);
+
+		@include MQ(M) {
+			transform: scale(1.35);
+		}
+	}
+
+
+	@include svg-select {
+		stroke: $brand-blue;
+		transition: stroke 0.5s;
+	}
+}
+

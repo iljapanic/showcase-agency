@@ -1,0 +1,17 @@
+// Section
+//
+//
+
+.section {
+	@include box-pad;
+	@include clearfix;
+}
+
+.section--bg {
+	background-color: $brand-gray-light;
+}
+
+.section--bg-dark {
+	background-color: $brand-gray;
+	color: white;
+}

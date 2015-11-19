@@ -1,0 +1,10 @@
+<svg class="nc-icon glyph" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48">
+<g>
+<path data-color="color-2" fill="#0088f2" d="M8,5c-2.8,0-5,2.2-5,5s2.2,5,5,5s5-2.2,5-5S10.8,5,8,5z"></path>
+<path data-color="color-2" fill="#0088f2" d="M40,5c-2.8,0-5,2.2-5,5s2.2,5,5,5s5-2.2,5-5S42.8,5,40,5z"></path>
+<path fill="#d6d8da" d="M24,1c-3.9,0-7,3.1-7,7s3.1,7,7,7s7-3.1,7-7S27.9,1,24,1z"></path>
+<polygon data-color="color-2" fill="#0088f2" points="12,33.1 12,19 1,19 1,28.3 5,34.3 5,43 15,43 15,36.7 "></polygon>
+<polygon data-color="color-2" fill="#0088f2" points="36,19 36,33.1 33,36.7 33,43 43,43 43,34.3 47,28.3 47,19 "></polygon>
+<polygon fill="#d6d8da" points="14,19 14,32.4 19,38.4 19,47 29,47 29,38.4 34,32.4 34,19 "></polygon>
+</g>
+</svg>

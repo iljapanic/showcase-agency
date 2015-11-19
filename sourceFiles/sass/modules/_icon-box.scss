@@ -1,0 +1,23 @@
+//
+// Icon box
+// 
+
+.icon-box {
+	
+	margin-top: $base-spacing;
+
+	@include MQ(M) {
+		@include span(1/3);
+	}
+	
+}
+
+.icon-box__icon {
+	font-size: 5.5rem;
+}
+
+.icon-box__title {
+	font-size: $h5-font-size;
+	text-transform: uppercase;
+	margin-bottom: $base-spacing/4;
+}

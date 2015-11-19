@@ -1,0 +1,76 @@
+$main-text: #2d313f; // main text
+$link: #0088F2; // anchor tags
+$background: #e7eaf0; // body background color
+
+$color-1: #2d313f; // blue
+$color-2: #0088F2; // red
+$color-3: #ffffff; // white
+
+#google-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: $background;
+	margin-top: $base-spacing*3;
+
+    @include MQ(M) {
+    	height: 300px;
+    }
+
+    @include MQ(L) {
+    	height: 500px;
+    }
+}
+
+#cd-google-map {
+	position: relative;
+
+	// address {
+	// 	position: absolute;
+	// 	width: 100%;
+	// 	bottom: 0;
+	// 	left: 0;
+	// 	padding: 1em 1em;
+	// 	background-color: rgba($color-2, .9);
+	// 	color: $color-3;
+	// 	@include font-size(13px);
+
+	// 	@include MQ(M) {
+	// 		@include font-size(15px);
+	// 		text-align: center;
+	// 	}
+	// }
+}
+
+#cd-zoom-in, #cd-zoom-out {
+	height: 32px;
+	width: 32px;
+	cursor: pointer;
+	margin-left: 10px;
+	background-color: rgba($color-2, .9);
+	background-repeat: no-repeat;
+	background-size: 32px 64px;
+	background-image: url('../img/cd-icon-controller.svg');
+
+	.no-touch &:hover {
+		background-color: rgba($color-2, 1);
+	}
+
+	@include MQ(M) {
+		margin-left: 50px;
+	}
+}
+
+#cd-zoom-in {
+	background-position: 50% 0;
+	margin-top: 10px;
+	margin-bottom: 1px;
+
+	@include MQ(M) {
+		margin-top: 50px;
+	}
+}
+
+#cd-zoom-out {
+	background-position: 50% -32px;
+}

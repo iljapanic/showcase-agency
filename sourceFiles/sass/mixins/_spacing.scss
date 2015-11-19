@@ -1,0 +1,93 @@
+// Box padding
+//
+
+
+
+// Padding
+.box-pad {
+	padding: $base-spacing*2 0;
+}
+
+@mixin box-pad {
+	padding: $base-spacing*2 0;
+}
+
+
+@mixin pad-bottom {
+	padding-bottom: $base-spacing;
+}
+
+.pad-bottom {
+	@include pad-bottom;
+}
+
+@mixin box-pad-half {
+	padding: $base-spacing 0;
+}
+
+.box-pad-half {
+	@include box-pad-half;
+}
+
+@mixin no-pad-bottom {
+	padding-bottom: 0 !important;
+}
+
+.no-pad-bottom {
+    @include no-pad-bottom;
+}
+
+
+
+// Margin
+@mixin margin-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.margin-center {
+	@include margin-center;
+}
+
+
+@mixin margin-top {
+	margin-top: $base-spacing;
+}
+
+.margin-top {
+    @include margin-top;
+}
+
+@mixin margin-top-double {
+	margin-top: $base-spacing*2;
+}
+
+.margin-top-double {
+    @include margin-top-double;
+}
+
+
+@mixin margin-bottom {
+	margin-bottom: $base-spacing;
+}
+
+.margin-bottom {
+    @include margin-bottom;
+}
+
+@mixin margin-bottom-double {
+	margin-bottom: $base-spacing*2;
+}
+
+
+.margin-bottom-double {
+    @include margin-bottom-double;
+}
+
+@mixin no-margin-bottom {
+	margin-bottom: 0;
+}
+
+.no-margin-bottom {
+	@include no-margin-bottom;
+}

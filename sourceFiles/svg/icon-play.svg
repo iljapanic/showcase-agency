@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="48px" height="58px" viewBox="0 0 48 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-play</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="icon-play" sketch:type="MSLayerGroup" fill="#000000">
+            <path d="M46.235514,25.2560748 L4.60560748,0.478504673 C4.09719626,0.179439252 3.57383178,0 2.97570093,0 C1.34579439,0 0.014953271,1.34579439 0.014953271,2.99065421 L-3.55271368e-15,2.99065421 L-3.55271368e-15,54.4299065 L0.014953271,54.4299065 C0.014953271,56.0747664 1.34579439,57.4205607 2.97570093,57.4205607 C3.58878505,57.4205607 4.09719626,57.211215 4.65046729,56.9121495 L46.235514,32.164486 C47.2224299,31.3420561 47.8504673,30.1009346 47.8504673,28.7102804 C47.8504673,27.3196262 47.2224299,26.0934579 46.235514,25.2560748 L46.235514,25.2560748 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
