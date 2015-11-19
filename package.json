@@ -1,10 +1,10 @@
 {
-  "name": "Inspirio",
+  "name": "Showcase - Agency",
   "version": "0.1.0",
-  "description": "Inspirio homepage",
+  "description": "An single-page agency site based on a project for a client.",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/"
+    "url": "https://github.com/iljapanic/showcase-agency/"
   },
   "devDependencies": {
     "browser-sync": "^2.2.1",

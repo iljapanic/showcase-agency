@@ -1,6 +1,6 @@
 # showcase-agency
 
-An single-page agency site based on a project for a client.
+A single-page agency site based on a project for a client.
 
 All the texts and assets have been replaced with generic ones.
 
